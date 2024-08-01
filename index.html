@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle Financeiro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+    <head>
+        <nav class="navbar navbar-expand-lg bg-body-secundary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Controle Financeiro</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Rendimentos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Despesas</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Cadastros
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Rendimentos Fixos</a></li>
+                      <li><a class="dropdown-item" href="#">Despesas Fixas</a></li>
+                      <li><a class="dropdown-item" href="#">Despesas com Cartões</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </head>
+    <main class="row container-padding flex">
+        <nav class="col-xl-3 col-md-6 col-12 menu">
+            <a href="#" class="active">Início</a>
+            <a href="./pages/rendimentos.html">Rendimentos</a>
+            <a href="./pages/despesas.html">Despesas Fixas</a>
+            <a href="./pages/cartoes.html">Cartões</a>
+            <a href="./pages/cadastros.html">Cadastros</a>
+        </nav>
+
+        <div class="col-xl-6 col-md-6 col-12 coluna-central">
+            <section class="block-saldo">
+                <h2>Olá, Elaine! :)</h2>
+                <time>Quinta-feira, 01/08/2024</time>
+                
+                <div class="flex">
+                    <div class="saldo-valor">
+                        <strong>
+                            Saldo do mês <img src="./assents/images/olho.svg" alt="Mostrar saldo" />
+                        </strong>
+                        <div class="cc">
+                            <span>Conta Corrente</span>
+                            <span class="valor">R$ 0,00</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section  class="cadastros">
+                <h2 class="d-flex justify-content-center ">Controles</h2>
+                <form action="" method="post" class="row">
+                    
+                    <div class="contasVencidas row my-1">
+                        <h5 class="d-flex justify-content-center my-3 "><strong> Contas já vencidas:</strong></h5>
+                        <div class="campo col-12 col-md-4">
+                            <label for="atrasadaUm">Data de vencimento:</label><br>
+                            <input type="date" name="dataAtrasadaUm" id="dataAtrasadaUm" class="campo-input" placeholder="Data do vencimento" required />
+                        </div>
+                        <div class="campo col-12 col-md-4">
+                            <label for="atrasadaUm">Descrição:</label><br>
+                            <input type="text" name="atrasadaUm" id="atrasadaUm" class="campo-input" placeholder="Tipo de conta" required />
+                        </div>
+                        <div class="campo col-12 col-md-4">
+                            <label for="valorAtrasadaUm">Valor da despesa:</label><br>
+                            <input type="number" name="valorAtrasadaUm" id="valorAtrasadaUm" class="campo-input" placeholder="R$ 0,00" required />
+                        </div>
+
+                        <div class="campo col-12 col-md-4">
+                            <label for="atrasadaDois">Data de vencimento:</label><br>
+                            <input type="date" name="dataAtrasadaDois" id="dataAtrasadaDois" class="campo-input"required />
+                        </div>
+                        <div class="campo col-12 col-md-4">
+                            <label for="atrasadaDois">Descrição:</label><br>
+                            <input type="text" name="atrasadaDois" id="atrasadaDois" class="campo-input" placeholder="Tipo de conta" required />
+                        </div>
+                        <div class="campo col-12 col-md-4">
+                            <label for="valorAtrasadaDois">Valor da despesa:</label><br>
+                            <input type="number" name="valorAtrasadaDois" id="valorAtrasadaDois" class="campo-input" placeholder="R$ 0,00" required />
+                        </div>
+
+                        <div class="campo col-12 col-md-4">
+                            <label for="atrasadaTres">Data de vencimento:</label><br>
+                            <input type="date" name="dataAtrasadaTres" id="dataAtrasadaTres" class="campo-input" placeholder="Data do vencimento" required />
+                        </div>
+                        <div class="campo col-12 col-md-4">
+                            <label for="atrasadaUm">Descrição:</label><br>
+                            <input type="text" name="atrasadaTres" id="atrasadaTres" class="campo-input" placeholder="Tipo de conta" required />
+                        </div>
+                        <div class="campo col-12 col-md-4">
+                            <label for="valorAtrasadaTres">Valor da despesa:</label><br>
+                            <input type="number" name="valorAtrasadaTres" id="valorAtrasadaTres" class="campo-input" placeholder="R$ 0,00" required />
+                        </div>
+                    </div>
+
+                    <h5 class="d-flex justify-content-center my-3 "><strong> Total vencidas:</strong></h5>
+                        <div class="campo col-12 col-md-4">
+                            <button id="totalVencidas" class="btn">R$0,00</button>
+                        </div>
+                    
+                    
+                    <div class="contasAVencer row my-1">
+                        <h5 class="d-flex justify-content-center my-3 "><strong>Contas à vencer:</strong></h5>
+                        <div class="campo col-12 col-md-4">
+                            <label for="dataVencimentoUm">Data de vencimento:</label><br>
+                            <input type="date" name="dataVencimentoUm" id="dataVencimentoUm" class="campo-input" placeholder="" required />
+                        </div>
+                        <div class="campo col-12 col-md-4">
+                            <label for="descricaoDespesaUm">Descrição:</label><br>
+                            <input type="text" name="descricaoDespesaUm" id="descricaoDespesaUm" class="campo-input" placeholder="Água, luz, telefone, internet, mercado, etc" required />
+                        </div>
+                        <div class="campo col-12 col-md-4">
+                            <label for="valorDespesaUm">Valor:</label><br>
+                            <input type="number" name="valorDespesaUm" id="valorDespesaUm" class="campo-input" placeholder="R$ 0,00" required />
+                        </div>
+
+                        <div class="campo col-12 col-md-4">
+                            <label for="dataVencimentoDois">Data de vencimento:</label><br>
+                            <input type="date" name="dataVencimentoDois" id="dataVencimentoDois" class="campo-input" placeholder="" required />
+                        </div>
+                        <div class="campo col-12 col-md-4">
+                            <label for="descricaoDespesaDois">Descrição:</label><br>
+                            <input type="text" name="descricaoDespesaDois" id="descricaoDespesaDois" class="campo-input" placeholder="Água, luz, telefone, internet, mercado, etc" required />
+                        </div>
+                        <div class="campo col-12 col-md-4">
+                            <label for="valorDespesaDois">Valor:</label><br>
+                            <input type="number" name="valorDespesaDois" id="valorDespesaDois" class="campo-input" placeholder="R$ 0,00" required />
+                        </div>
+
+                        <div class="campo col-12 col-md-4">
+                            <label for="dataVencimentoTres">Data de vencimento:</label><br>
+                            <input type="date" name="dataVencimentoTres" id="dataVencimentoTres" class="campo-input" placeholder="" required />
+                        </div>
+                        <div class="campo col-12 col-md-4">
+                            <label for="descricaoDespesaUm">Descrição:</label><br>
+                            <input type="text" name="descricaoDespesaTres" id="descricaoDespesaTres" class="campo-input" placeholder="Água, luz, telefone, internet, mercado, etc" required />
+                        </div>
+                        <div class="campo col-12 col-md-4">
+                            <label for="valorDespesaUm">Valor:</label><br>
+                            <input type="number" name="valorDespesaTres" id="valorDespesaTres" class="campo-input" placeholder="R$ 0,00" required />
+                        </div>
+
+                        <div class="campo col-12 col-md-4">
+                            <label for="dataVencimentoQuatyro">Data de vencimento:</label><br>
+                            <input type="date" name="dataVencimentoQuatro" id="dataVencimentoQuatro" class="campo-input" placeholder="" required />
+                        </div>
+                        <div class="campo col-12 col-md-4">
+                            <label for="descricaoDespesaQuatro">Descrição:</label><br>
+                            <input type="text" name="descricaoDespesaQuatro" id="descricaoDespesaQuatro" class="campo-input" placeholder="Água, luz, telefone, internet, mercado, etc" required />
+                        </div>
+                        <div class="campo col-12 col-md-4">
+                            <label for="valorDespesaQuatro">Valor:</label><br>
+                            <input type="number" name="valorDespesaQuatro" id="valorDespesaQuatro" class="campo-input" placeholder="R$ 0,00" required />
+                        </div>
+
+                        <div class="campo col-12 col-md-4">
+                            <label for="dataVencimentoCinco">Data de vencimento:</label><br>
+                            <input type="date" name="dataVencimentoCinco" id="dataVencimentoCinco" class="campo-input" placeholder="" required />
+                        </div>
+                        <div class="campo col-12 col-md-4">
+                            <label for="descricaoDespesaUm">Descrição:</label><br>
+                            <input type="text" name="descricaoDespesaCinco" id="descricaoDespesaCinco" class="campo-input" placeholder="Água, luz, telefone, internet, mercado, etc" required />
+                        </div>
+                        <div class="campo col-12 col-md-4">
+                            <label for="valorDespesCinco">Valor:</label><br>
+                            <input type="number" name="valorDespesaCinco" id="valorDespesaCinco" class="campo-input" placeholder="R$ 0,00" required />
+                        </div>
+
+                        <div class="campo col-12 col-md-4">
+                            <label for="dataVencimentoSeis">Data de vencimento:</label><br>
+                            <input type="date" name="dataVencimentoSeis" id="dataVencimentoSeis" class="campo-input" placeholder="" required />
+                        </div>
+                        <div class="campo col-12 col-md-4">
+                            <label for="descricaoDespesaSeis">Descrição:</label><br>
+                            <input type="text" name="descricaoDespesaSeis" id="descricaoDespesaSeis" class="campo-input" placeholder="Água, luz, telefone, internet, mercado, etc" required />
+                        </div>
+                        <div class="campo col-12 col-md-4">
+                            <label for="valorDespesaSeis">Valor:</label><br>
+                            <input type="number" name="valorDespesaSeis" id="valorDespesaSeis" class="campo-input" placeholder="R$ 0,00" required />
+                        </div>
+
+                        <div class="campo col-12 col-md-4">
+                            <label for="dataVencimentoSete">Data de vencimento:</label><br>
+                            <input type="date" name="dataVencimentoSete" id="dataVencimentoSete" class="campo-input" placeholder="" required />
+                        </div>
+                        <div class="campo col-12 col-md-4">
+                            <label for="descricaoDespesaSete">Descrição:</label><br>
+                            <input type="text" name="descricaoDespesaSete" id="descricaoDespesaSete" class="campo-input" placeholder="Água, luz, telefone, internet, mercado, etc" required />
+                        </div>
+                        <div class="campo col-12 col-md-4">
+                            <label for="valorDespesaSete">Valor:</label><br>
+                            <input type="number" name="valorDespesaSete" id="valorDespesaSete" class="campo-input" placeholder="R$ 0,00" required />
+                        </div>
+                        
+
+                        <h5 class="d-flex justify-content-center my-3 "><strong> Total à vencer:</strong></h5>
+                        <div class="campo col-12 col-md-4">
+                            <button id="totalAVencer" class="btn">R$0,00</button>
+                        </div>
+                    </div>
+
+                    <div class="rendimentos row my-1">
+                        <h5 class="d-flex justify-content-center my-3 "><strong>Rendimentos:</strong></h5>
+                        <div class="campo col-12 col-md-4">
+                            <label for="dataRendimento">Data:</label><br>
+                            <input type="date" name="dataRendimento" id="dataRendimento" class="campo-input" />
+                        </div>
+                        <div class="campo col-12 col-md-4">
+                            <label for="descricaoRendimento">Descrição:</label><br>
+                            <input type="text" name="descricaoRendimento" id="descricaoRendimento" class="campo-input" placeholder="Pagamento, Adiantamento, Comissão, Extra, etc" />
+                        </div>
+                        <div class="campo col-12 col-md-4">
+                            <label for="valorRendimento">Valor:</label><br>
+                            <input type="number" name="valorRendimento" id="valorRendimento" class="campo-input" placeholder="R$ 0,00" />
+                        </div>
+
+                        <h5 class="d-flex justify-content-center my-3 "><strong> Total dos rendimentos:</strong></h5>
+                        <div class="campo col-12 col-md-4">
+                            <button id="totalRendimentos" class="btn">R$0,00</button>
+                        </div>
+
+                    </div>
+                    
+                    
+                    <div class="campo col-6 my-5">
+                        <button type="submit" class="btn">
+                            Concluir
+                        </button>
+                    </div>
+                    
+                </form>
+            </section>
+        </div>
+
+        <aside class="col-xl-3 col-md-12 col-12 extrato">
+            <h3>Extrato</h3>
+            <div class="registro-transacoes">
+                <div class="transacoes-group">
+                    <strong class="mes-group">Setembro</strong>
+                    <div class="transacao-item">
+                        <div class="transacao-info">
+                            <span class="tipo">Transferência</span>
+                            <strong class="valor">-R$50,00</strong>
+                        </div>
+                        <time class="data">30/08</time>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+   
+    <footer>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script> 
+</body>
+</html>
+
